@@ -1,15 +1,5 @@
 #include "main.h"
 
-int _strlen(const char *s)
-{
-int i = 0;
-while (s[i])
-	i++;
-
-return (i);
-}
-
-
 /**
  * binary_to_uint - converts a binary number to an unsigned int
  * @b: binary number
@@ -34,6 +24,3 @@ unsigned int binary_to_uint(const char *b)
 
     return (_strlen);
 }
-	
-
-
