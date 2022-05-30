@@ -19,21 +19,21 @@ return (i);
 
 unsigned int binary_to_uint(const char *b)
 {
-	unsigned int n = 0;
-	int i, len;
+    int i;
+    unsigned int _strlen = 0;
 
-	if (b == NULL)
-		return (0);
+    if (!b)
+        return (0);
 
-	len = _strlen(b);
+    for (i = 0; b[i]; i++)
+    {
+        if (b[i] < '0' || b[i] > '1')
+            return (0);
+        strlen = 2 * _strlen + (b[i] - '0');
+    }
 
-	for (i = 0; i != len; i++)
-	{
-		if (b[len - i - 1] == '1')
-			n += 1 << i;
-		else if (b[len - i - 1] != '0')
-			return (0);
-	}
-
-	return (n);
+    return (_strlen);
 }
+	
+
+
