@@ -8,12 +8,12 @@
  *
  * Return: no return
  */
-void free_grid(int **gridout, int height)
+void free_grid(int **grid, int height)
 {
-	if (gridout != NULL && height != 0)
+	if (grid != NULL && height != 0)
 	{
 		for (; height >= 0; height--)
-			free(gridout[height]);
-		free(gridout);
+			free(grid[height]);
+		free(grid);
 	}
 }
