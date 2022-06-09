@@ -8,7 +8,7 @@
  *
  * Return: no return
  */
-void free_grid(int **grid, int height)
+void free_grid(int **gridout, int height)
 {
 	if (gridout != NULL && height != 0)
 	{
